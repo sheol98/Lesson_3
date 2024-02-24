@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let agePeople = parseInt(prompt(`Введіть ваш вік`));
+      let result;
+      if (agePeople < 1 || agePeople > 120) {
+        result = `Вік введено некоректно`;
+      } else if (agePeople <= 6) {
+        result = `Дитина ходить в садок`;
+      } else if (agePeople <= 16) {
+        result = `Школяр`;
+      } else if (agePeople <= 21) {
+        result = `Студент`;
+      } else if (agePeople <= 59) {
+        result = `Працівник`;
+      } else if (agePeople >= 60) {
+        result = `Пенсіонер`;
+      }
+      document.write(result);
+    </script>
+  </body>
+</html>

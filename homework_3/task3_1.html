@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const firstChildName = prompt(`Введіть імʼя першої дитини`, `Светочка`);
+      const secondChildName = prompt(`Введіть імʼя другої дитини`, `Любочка`);
+      let firstChildCandy = parseInt(
+        prompt(`Скільки цукерок у ${firstChildName}`, `2`)
+      );
+      let secondChildCandy = parseInt(
+        prompt(`Скільки цукерок у ${secondChildName}`, `4`)
+      );
+      let result;
+      if (firstChildCandy === secondChildCandy) {
+        result = `Кількість цукерок у ${firstChildName} та ${secondChildName} однакова`;
+      } else if (firstChildCandy > secondChildCandy) {
+        result = `Кількість цукерок більше у ${firstChildName}`;
+      } else {
+        result = `Кількість цукерок більше у ${secondChildName}`;
+      }
+      document.write(result);
+    </script>
+  </body>
+</html>

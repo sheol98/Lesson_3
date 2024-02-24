@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const categoryDrive = prompt(`Яка категорія`);
+      let result;
+      switch (categoryDrive) {
+        case `A`:
+        case `a`:
+          result = `мотоцикл`;
+          break;
+        case `B`:
+        case `b`:
+          result = `легковий автомобіль`;
+          break;
+        case `C`:
+        case `c`:
+          result = `вантажний автомобіль`;
+        default:
+          result = `Значення введено некоректно`;
+          break;
+      }
+      document.write(result);
+    </script>
+  </body>
+</html>

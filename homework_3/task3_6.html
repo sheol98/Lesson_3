@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const nomberDayWeek = parseInt(prompt(`Номер дня тиждня`));
+      let result;
+      switch (nomberDayWeek) {
+        case 1:
+          result = `Понеділок`;
+          break;
+        case 2:
+          result = `Вівторок`;
+          break;
+        case 3:
+          result = `Середа`;
+          break;
+        case 4:
+          result = `Четверг`;
+          break;
+        case 5:
+          result = `Пʼятниця`;
+          break;
+        case 6:
+          result = `Суббота`;
+          break;
+        case 7:
+          result = `Неділя`;
+          break;
+        default:
+          result = `Значення введено некоректно`;
+          break;
+      }
+      document.write(result);
+    </script>
+  </body>
+</html>

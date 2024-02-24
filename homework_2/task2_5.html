@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача №5</title>
+  </head>
+  <body>
+    <script>
+      const second = parseInt(
+        prompt(`Введіть скільки пройшло секунд від початку доби`, `32`)
+      );
+      const hour = Math.floor(second / 3600);
+      const min = Math.floor(second / 60);
+      document.write(`
+			З почтку доби пройшло ${hour} годин, та ${min} хвилин.
+			`);
+    </script>
+  </body>
+</html>

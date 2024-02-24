@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const numberMonth = parseInt(prompt(`Номер місяця`));
+      let result;
+      switch (numberMonth) {
+        case 12:
+        case 1:
+        case 2:
+          result = `Зима`;
+          break;
+        case 3:
+        case 4:
+        case 5:
+          result = `Весна`;
+          break;
+        case 6:
+        case 7:
+        case 8:
+          result = `Літо`;
+          break;
+        case 9:
+        case 10:
+        case 11:
+          result = `Осінь`;
+          break;
+        default:
+          result = `Значення введено некоректно`;
+          break;
+      }
+      document.write(result);
+    </script>
+  </body>
+</html>

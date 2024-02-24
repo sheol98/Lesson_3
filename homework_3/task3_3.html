@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const minNumber = 1,
+        maxNumber = 5;
+      const randomNumber =
+        minNumber + Math.floor(Math.random() * (maxNumber - minNumber + 1));
+      let userNum = parseInt(prompt(`Введіть своє число`));
+      let result;
+      if (userNum === randomNumber) {
+        result = `Ви вгадали число`;
+      } else {
+        userNum = parseInt(prompt(`Ви не вгадали. Введіть нове число`));
+      }
+      if (userNum === randomNumber) {
+        result = `Ви вгадали число`;
+      } else {
+        result = `Ви не вгадали.`;
+      }
+			document.write(result)
+    </script>
+  </body>
+</html>

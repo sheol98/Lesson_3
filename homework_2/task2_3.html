@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача №3</title>
+  </head>
+  <body>
+    <script>
+      const cost = parseInt(prompt(`Введіть вартість одиниці товару`, `10`));
+      const number = parseInt(prompt(`Введіть кількість товару`, `245`));
+      const interest = parseInt(prompt(`Введіть відсоток податку`, `5`));
+
+      const totalCost = cost * number;
+
+      const pdvTotal = (totalCost * interest) / 100;
+      document.write(
+        `Загальна вартість товарів ${totalCost} грн. А ПДВ ${pdvTotal} грн.`
+      );
+    </script>
+  </body>
+</html>

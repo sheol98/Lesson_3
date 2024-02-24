@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let firstProductCost = parseFloat(
+        prompt("Введіть вартість першого товару", "3")
+      );
+      let firstProductQuantity = parseInt(
+        prompt("Введіть кількість першого товару", "7")
+      );
+      let secondProductCost = parseFloat(
+        prompt("Введіть вартість другого товару", "5")
+      );
+      let secondProductQuantity = parseInt(
+        prompt("Введіть кількість другого товару", "2")
+      );
+      let thirdProductCost = parseFloat(
+        prompt("Введіть вартість третього товару", "10")
+      );
+      let thirdProductQuantity = parseInt(
+        prompt("Введіть кількість третього товару", "8")
+      );
+
+      let firstProductPrice = firstProductCost * firstProductQuantity;
+      let secondProductPrice = secondProductCost * secondProductQuantity;
+      let thirdProductPrice = thirdProductCost * thirdProductQuantity;
+
+      let totalCost =
+        firstProductPrice + secondProductPrice + thirdProductPrice;
+      document.write(`<pre>  Вартість першого товару = ${firstProductPrice}\n`);
+      document.write(`Вартість другого товару = ${secondProductPrice}\n`);
+      document.write(`Вартість третього товару = ${thirdProductPrice}\n`);
+      document.write(`Загальна вартість всіх товарів = ${totalCost}\n`);
+    </script>
+  </body>
+</html>

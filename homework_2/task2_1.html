@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача №1</title>
+  </head>
+  <body>
+    <script>
+      const firstNum = parseInt(prompt(`Введіть перше число`, `5`));
+      const secondNum = parseInt(prompt(`Введіть друге число`, `7`));
+
+      const plus = firstNum + secondNum;
+      const division = firstNum / secondNum;
+      const multiplication = firstNum * secondNum;
+
+      document.write(
+        `<pre>
+          // Вихідні дані
+            const firstNum = ${firstNum}
+            const secondNum = ${secondNum}
+
+          // Результати операцій суми, ділення та множення
+              const plus = firstNum + secondNum
+              const division = firstNum / secondNum
+              const multiplication = firstNum * secondNum
+
+          //Вивід результатів у формі таблиці...
+                </pre>`
+      );
+      document.write(
+        `<table style='border:1px solid #fff' >
+                <tr>
+                  <th style="padding-right: 15px">Сума</th>
+                  <td> ${plus}</td>
+                </tr>
+                <tr>
+                  <th style="padding-right: 15px">Результат ділення</th>
+                  <td> ${division.toFixed(3)}</td>
+                </tr>
+                <tr>
+                  <th style="padding-right: 15px"> Множення </th>
+                  <td> ${multiplication}</td>
+                </tr>
+              </table>`
+      );
+    </script>
+  </body>
+</html>

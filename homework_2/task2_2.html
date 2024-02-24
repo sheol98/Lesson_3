@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача №2</title>
+  </head>
+  <body>
+    <script>
+      const myYear = parseInt(prompt(`Введіть рік вашого народження`, `1998`));
+      const nowYear = parseInt(prompt(`Введіть поточний рік`, `2024`));
+      const result = nowYear - myYear;
+      document.write(
+        `<pre> 
+            //Вносимо вихідні дані:
+            const myYear = ${myYear}
+            const nowYear  = ${nowYear}
+
+            // Проводимо розрахунки
+              const result = nowYear - myYear;
+              
+            // Виводимо результати на сторінку...
+          </pre>`
+      );
+      document.write(`Станом на цей день ${nowYear} року Вам ${result} років`);
+    </script>
+  </body>
+</html>

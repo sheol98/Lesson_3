@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача №0</title>
+  </head>
+  <body>
+		<main>
+			
+		</main>
+    <script>
+      // ============================== Задача №0 ==============================
+      // Вирази
+      // 1. S1=a+12+b
+      // 2. S_2=√(((a+b)/2a) )
+      // 3. S_3=∛((a+b)c)
+      // 4. S_4=sin⁡(a/(-b))
+      // -------------------------------------------
+      //  Вираз №1: S1=a+12+b
+      const a = parseInt(prompt(`Введіть число a`, `8`));
+      const b = parseInt(prompt(`Введіть число b`, `7`));
+      const sum = a + 12 + b;
+      document.write(
+        `<pre>
+-------------------------------------------
+  Вираз №1
+            // Вхідні дані 
+            const a = ${a}
+            const b = ${b}
+
+            // Обчислюємо 
+            const sum = a + 12 + b;
+
+            // Виводимо результати...
+                </pre>`
+      );
+      document.write(`Результатом обчислення буде: ${sum}`);
+      // -------------------------------------------
+      //  Вираз №2: S_2=√(((a+b)/2a) )
+      const result2 = Math.sqrt((a + b) / (2 * a));
+      document.write(
+        `<pre>
+-------------------------------------------
+  Вираз №2
+            // Вхідні дані 
+            const a = ${a}
+            const b = ${b}
+
+            // Обчислюємо 
+            const result2 = Math.sqrt((a + b) / (2 * a));
+
+            // Виводимо результати...
+                </pre>`
+      );
+      document.write(`Результатом обчислення буде: ${result2.toFixed(2)}`);
+      // -------------------------------------------
+      //  Вираз №3: S_3=∛((a+b)c)
+      const c = parseInt(prompt(`Введіть число с`, `4`));
+      const result3 = Math.cbrt((a + b) * c);
+      document.write(
+        `<pre>
+-------------------------------------------
+  Вираз №3
+            // Вхідні дані 
+            const a = ${a}
+            const b = ${b}
+				const c = ${c}
+
+            // Обчислюємо 
+				const result3 = Math.cbrt((a + b) * c);
+
+            // Виводимо результати...
+                </pre>`
+      );
+      document.write(`Результатом обчислення буде: ${result3.toFixed(2)}`);
+      // -------------------------------------------
+      //  Вираз №4: S_4=sin⁡(a/(-b))
+      const result4 = Math.sin(a / -b);
+      document.write(
+        `<pre>
+-------------------------------------------
+  Вираз №4
+            // Вхідні дані 
+            const a = ${a}
+            const b = ${b}
+
+            // Обчислюємо 
+				const result4 = Math.sin(a / -b);
+
+            // Виводимо результати...
+                </pre>`
+      );
+      document.write(`Результатом обчислення буде: ${result4.toFixed(2)}`);
+
+    </script>
+  </body>
+</html>
